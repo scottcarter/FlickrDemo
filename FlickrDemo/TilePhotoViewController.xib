@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TilePhotoViewController" customModule="NetworkingExamples" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="xim-76-d1s" id="6Rr-vm-hEk"/>
+                <outlet property="photoImageView" destination="6mg-Lg-UmL" id="gdw-ZU-JGe"/>
+                <outlet property="titleLabel" destination="RY5-jd-BGD" id="PR5-IX-Quz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exW-eM-4Pm">
+                    <rect key="frame" x="0.0" y="22" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="dZb-q8-GtU"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <items>
+                        <navigationItem title="Tile Photo" id="etx-6M-va3">
+                            <barButtonItem key="leftBarButtonItem" title="Close" id="myl-0s-GW2">
+                                <connections>
+                                    <action selector="closeAction:" destination="-1" id="gvO-7n-7CZ"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" systemItem="add" id="Smx-ZZ-fr9">
+                                <connections>
+                                    <action selector="addBookmarkAction:" destination="-1" id="d0r-oO-v2a"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RY5-jd-BGD" userLabel="Title Label">
+                    <rect key="frame" x="5" y="86" width="365" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xim-76-d1s" userLabel="Description Label">
+                    <rect key="frame" x="5" y="130" width="365" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6mg-Lg-UmL">
+                    <rect key="frame" x="0.0" y="177" width="375" height="490"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="exW-eM-4Pm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="1e7-c0-MdW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6mg-Lg-UmL" secondAttribute="trailing" id="4Kq-HO-Xo2"/>
+                <constraint firstItem="exW-eM-4Pm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="22" id="9Yy-a4-hRL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xim-76-d1s" secondAttribute="trailing" constant="5" id="EWf-mL-atD"/>
+                <constraint firstItem="RY5-jd-BGD" firstAttribute="top" secondItem="exW-eM-4Pm" secondAttribute="bottom" constant="20" id="EfI-5o-HN3"/>
+                <constraint firstItem="xim-76-d1s" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="JLx-1h-McN"/>
+                <constraint firstItem="RY5-jd-BGD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="Qdy-hE-iEv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RY5-jd-BGD" secondAttribute="trailing" constant="5" id="Tjd-au-b6w"/>
+                <constraint firstItem="6mg-Lg-UmL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VY5-Gl-OKa"/>
+                <constraint firstItem="6mg-Lg-UmL" firstAttribute="top" secondItem="xim-76-d1s" secondAttribute="bottom" constant="26" id="o51-3S-cMY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6mg-Lg-UmL" secondAttribute="bottom" id="sGX-5m-khy"/>
+                <constraint firstItem="xim-76-d1s" firstAttribute="top" secondItem="RY5-jd-BGD" secondAttribute="bottom" constant="23" id="xNg-XC-f4h"/>
+                <constraint firstItem="exW-eM-4Pm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xUp-yH-RZf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
