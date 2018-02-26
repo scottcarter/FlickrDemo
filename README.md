@@ -1,5 +1,5 @@
 
-<img src="https://github.com/scottcarter/FlickrDemo/blob/master/Flickr_demo.gif" width="338" height="665" />
+<img src="https://github.com/scottcarter/FlickrDemo/blob/master/Flickr_demo.gif" width="323" height="600" />
 
  
 
