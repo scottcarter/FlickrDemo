@@ -25,8 +25,8 @@ protocol RecentPhotosDelegate: class {
 }
 
 
-// Public for Reference framework.
-public class RecentPhotos  {
+
+class RecentPhotos  {
     
     
     // ==========================================================================
@@ -182,8 +182,7 @@ public class RecentPhotos  {
     // MARK: - Type methods
     
     
-    // Public access to the RecentPhotos singleton
-    public class func shared() -> RecentPhotos {
+    class func shared() -> RecentPhotos {
         return sharedRecentPhotos
     }
     

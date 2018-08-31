@@ -283,7 +283,7 @@ extension RecentsTableViewController {
     }
 
     
-    fileprivate enum CellIdentifiers {
+    fileprivate struct CellIdentifiers {
         static let PhotoCell = "PhotoCellID"
     }
 
